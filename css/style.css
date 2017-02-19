@@ -1,0 +1,107 @@
+body{
+  font-family: sans-serif;
+  margin: 0;
+}
+main{
+  width: 100%;
+  height: 100vh;
+  overflow:hidden;
+}
+h3 {
+    margin-top: 0.5em;
+}
+aside{
+  width: 30%;
+  height: 100%;
+  float: left;
+  background-color: #eee;
+  color: #fff;
+  border-right: 3px solid #555;
+}
+aside section{
+  height: calc( 100% / 6 - 2em);
+  border-top: 5px solid #fff;
+  padding: 1em;
+  font-family: 'Yatra One', cursive;
+}
+
+aside section:first-child{
+  border-top: 0;
+}
+
+/*Programmer Image*/
+aside section:nth-child(1){
+  background:linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 1)
+    ), url('http://www.newsmaritime.com/wp-content/uploads/2016/06/Check-out-the-new-and-functional-programming-language.jpg') rgba(1,1,1,0.7) 50% 50% no-repeat;
+  background-size: cover;
+ 
+}
+
+/*Gamer Image*/
+aside section:nth-child(2){
+  background:linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 1)
+    ), url('https://pressstart2begin.files.wordpress.com/2016/02/ace-attorney.jpg') 50% 80% no-repeat;
+  background-size: cover;
+
+}
+
+/*Book Image*/
+aside section:nth-child(3){
+  background:linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 1)
+    ), url('http://www.artsfon.com/pic/201512/1440x900/artsfon.com-79170.jpg') 50% 40% no-repeat;
+  background-size: cover;
+
+}
+
+/*Science Image*/
+aside section:nth-child(4){
+  background:linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 1)
+    ), url('http://www.basicknowledge101.com/photos/2015/space/Elephant-4214115.jpg') 50% 40% no-repeat;
+  background-size: cover;
+ 
+}
+
+/*History/Society Image*/
+aside section:nth-child(5){
+  background:linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 1)
+    ), url('http://cdn1.spiegel.de/images/image-362778-breitwandaufmacher-yxqk-362778.jpg') 50% 40% no-repeat;
+  background-size: cover;
+
+}
+
+aside section:last-child{
+  color: #000;
+  height: 2.5em;
+  font-size: 0.9em;
+}
+
+.container{
+  width: 60%;
+  height: 100%;
+  margin-left: 5.78%;
+  padding-right: 4%;
+  float: left;
+  overflow-y:scroll;
+}
+
+.container p:last-child{
+	margin-bottom: 0;
+}
+h4{
+  font-family: 'Yatra One', cursive;
+  margin-bottom: 0;
+}
+
+.description{
+  margin-top: 0;
+}
