@@ -9,8 +9,11 @@ body{
   font-family: sans-serif;
   margin: 0;
 }
-.header{
+p{
   margin: 0
+}
+.main{
+  display: flex
 }
 .portfolio{
   display: flex;
@@ -25,6 +28,7 @@ body{
 }
 .card__image{
   max-width: 200px;
+  border-radius: 3px;
 }
 .footer{
   display: flex;
@@ -73,3 +77,5 @@ body{
 .white{
   color: #fff
 }
+
+/*filters - useful to classify projects*/
