@@ -9,6 +9,17 @@ body{
   font-family: sans-serif;
   margin: 0;
 }
+.header{
+  margin: 0
+}
+.portfolio{
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+}
+.info{
+  margin-left: auto
+}
 .card{
   max-width: 200px;
 }
