@@ -9,6 +9,10 @@ body{
   font-family: sans-serif;
   margin: 0;
 }
+.card{
+  max-width: 200px;
+}
+
 /*utilities*/
 /*backgrounds*/
 .dark-blue-bg{
@@ -43,7 +47,7 @@ body{
 .dark-green{
   color: var(--dark-green)
 }
-.pink-bg{
+.pink{
   color: var(--pink)
 }
 .white{
