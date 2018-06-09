@@ -12,6 +12,9 @@ body{
 .card{
   max-width: 200px;
 }
+.card__image{
+  max-width: 200px;
+}
 
 /*utilities*/
 /*backgrounds*/
