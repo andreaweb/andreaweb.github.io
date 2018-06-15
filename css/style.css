@@ -81,6 +81,13 @@ p,h5,h3{
 .footer a i:hover{
   color: var(--pink)
 }
+
+@media screen and (max-height: 500px){
+  .main{
+    display: block;
+  }
+}
+
 /*utilities*/
 /*backgrounds*/
 .dark-blue-bg{
