@@ -82,7 +82,8 @@ p,h5,h3{
   color: var(--pink)
 }
 
-@media screen and (max-height: 500px){
+@media screen and (max-height: 500px),
+screen and (max-width: 900px){
   .main{
     display: block;
   }
