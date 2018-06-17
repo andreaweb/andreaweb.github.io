@@ -87,6 +87,9 @@ screen and (max-width: 900px){
   .main{
     display: block;
   }
+  .aside{
+    text-align: center;
+  }
 }
 
 /*utilities*/
