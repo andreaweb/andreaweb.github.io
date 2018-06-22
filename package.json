@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/andreaweb/andreaweb.github.io/issues"
   },
-  "homepage": "https://github.com/andreaweb/andreaweb.github.io#readme"
+  "homepage": "https://github.com/andreaweb/andreaweb.github.io#readme",
+  "dependencies": {
+    "browser-sync": "^2.24.4",
+    "normalize.css": "^8.0.0"
+  }
 }
