@@ -1,7 +1,12 @@
-My Coding Portfolio. I'll update it with new projects and skills as I go. For now, all projects listed come from FreeCodeCamp. There are more in my codepen.io, but I'm being picky for this portfolio.
+<h1>My Coding Portfolio</h1>
 
-As it is you don't *have to* use browser-sync, but as I add more stuff, it'll end up being mandatory.
+<h2>Description</h2>
 
-1 - Git Clone
-2 - Npm install
-3 - browser-sync start --server --files "*"
+For now, all live listed projects come from FreeCodeCamp curriculum, but I'm also solving the <a href="https://github.com/LFeh/frontend-challenges">front-end-challenges list</a>, and those will be available in <a href="https://github.com/andreaweb/front-end-challenges">my own repository</a>.
+
+<h2>Installation</h2>
+<ol>
+<li>Git Clone</li>
+<li>Npm install</li>
+<li>browser-sync start --server --files "*"</li>
+</ol>
