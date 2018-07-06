@@ -3,7 +3,6 @@
   --light-orange: #efa777;
   --dark-orange: #b6631d;
   --dark-green: #142419;
-  --pink: #bf8172;
 }
 body{
   font-family: sans-serif;
@@ -14,35 +13,50 @@ p,h5,h3{
 .body{
   display: grid;
   min-height: 100vh;
-  grid-template-rows: 90px auto 40px;
+  grid-template-rows: 55px auto;
   grid-template-areas:
   "h h h h h h"
   "m m m m m m"
   "m m m m m m"
-  "m m m m m m"
-  "m m m m m m"
-  "m m m m m m"
-  "m m m m m m"
-  "f f f f f f"
 }
 .header{
-  grid-area: h
+  grid-area: h;
+  display: flex;
+}
+.filter{
+  display: flex;
+  justify-content: space-around;
+  flex: 3;
+}
+.filter a:hover {
+    background: var(--dark-blue)
+}
+.filter a{
+    text-decoration: underline;
+    color: white;
+    background: var(--light-orange);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .intro{
-  padding: 25px;
-  font-family: 'Sunflower', sans-serif;
-  font-size: 22px;
+    padding: 25px 10px 5px 10px;
+    font-family: 'Sunflower', sans-serif;
+    font-size: 22px;
+    flex: 1;
 }
 .main{
   display: flex;
   grid-area: m
 }
 .aside{
-  padding: 10px
+  padding: 10px;
+  flex: 1;
 }
 .portfolio{
   display: flex;
-  flex: 1;
+  flex: 3;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -70,15 +84,17 @@ p,h5,h3{
   max-width: 100%;
   border-radius: 3px;
 }
-.footer{
+
+.contact{
   display: flex;
-  justify-content: space-evenly;
-  padding: 20px 10px;
-  font-size: 36px;
-  grid-area: f
+  justify-content: space-around;
+  margin-top: 40px;
 }
-.footer a i:hover{
-  color: var(--pink)
+.contact a i{
+  font-size: 36px;
+}
+.contact a i:hover{
+  color: var(--light-orange)
 }
 
 @media screen and (max-height: 500px),

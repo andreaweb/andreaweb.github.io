@@ -8,5 +8,5 @@ For now, all live listed projects come from FreeCodeCamp curriculum, but I'm als
 <ol>
 <li>Git Clone</li>
 <li>Npm install</li>
-<li>browser-sync start --server --files "*"</li>
+<li>browser-sync start --config bs-config.js</li>
 </ol>
