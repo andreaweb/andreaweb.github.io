@@ -59,12 +59,14 @@ p,h5,h3{
   flex: 3;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 .info{
   margin-left: auto
 }
 .project{
-  margin: 18px
+  margin: 18px;
+  flex-basis: 35%;
 }
 .card{
   position:relative;
