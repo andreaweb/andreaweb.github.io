@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import projects from './projects.json';
 import './App.css';
 
 class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      projects: projects
+    }
+  }
   render() {
     return (
       <div className="App">
@@ -16,31 +22,55 @@ class App extends Component {
     <aside class="aside dark-blue-bg white">
       <h5>I'm searching for a new job at a place that: <ol><li>Has technical challenges and a fast pace</li><li>Cares more about actual deliver and performance than appearances</li><li>Offers a good work environment that help you focus and/or is an adept of home office</li></ol> If your company fits the description and you like my portfolio, please message me!</h5>
       <section class="contact">
-        <a href="https://www.linkedin.com/in/andreafrontend/" title="LinkedIn" target="_blank">
+        <a 
+          href="https://www.linkedin.com/in/andreafrontend/" 
+          title="LinkedIn" 
+          rel="noopener noreferrer" 
+          target="_blank"
+        >
           <i class="fa fa-linkedin-square white"></i>
         </a>
-        <a href="https://twitter.com/andreafrontend?lang=en" title="Twitter" target="_blank">
+
+        <a 
+          href="https://twitter.com/andreafrontend?lang=en" 
+          title="Twitter" 
+          rel="noopener noreferrer" 
+          target="_blank"
+        >
           <i class="fa fa-twitter-square white"></i>
         </a>
-        <a href="mailto:return.santana@gmail.com" title="E-mail" target="_blank">
+
+        <a 
+          href="mailto:return.santana@gmail.com" 
+          title="E-mail" 
+          rel="noopener noreferrer" 
+          target="_blank"
+        >
           <i class="fa fa-envelope white"></i>
         </a>
       </section>
     </aside>
     <div class="portfolio">
-      <section class="project">
-        <div class="title">
-          <h3>My Reads</h3>
-           <p class="description">A shelf app that displays books that you're reading, planning to read, or have finished. You can add more books in the search page, and you can change the shelves books are in or remove them from the shelves in either page.
-              <span class="tag skills">React</span> <span class="tag skills">API</span> <span class="tag occasion">Udacity</span>
-            </p>
-        </div>
-        <div class="card">
-          <a href="https://andreaweb.github.io/reactnd-project-myreads-starter/" title="My Reads" rel="noopener noreferrer" target="_blank">
-            <img class="card__image" alt="My Reads Printscreen" src="images/myreads.jpg" />
-          </a>
-        </div>
-      </section>
+      {this.state.projects.map(
+          (project, key) =>
+          <section class="project" key={key}>
+            <div class="title">
+              <h3>{project.name}</h3>
+               <p class="description">
+                  {project.description}
+                  {project.stack.map((stack, i) => <span class="tag skills" key={i}>{stack}</span>)}
+                  {project.occasion ? <span class="tag occasion">{project.occasion}</span> : null }
+                </p>
+            </div>
+            <div class="card">
+              <a href={project.link} title={project.name} rel="noopener noreferrer" target="_blank">
+                <img class="card__image" alt="" src={project.thumbnail} />
+              </a>
+            </div>
+          </section>
+        )
+      }
+      
     </div>
   </main>
       </div>

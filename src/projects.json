@@ -1,4 +1,4 @@
-{
+[{
 	"name": "Wikipedia Viewer",
 	"description": "This project connects to the Wikipedia API and returns the input query as a list. The list will display: title, a short description of each result and image if available",
 	"stack": ["Jquery", "API"],
@@ -72,18 +72,19 @@
 },
 {
 	"name": "Star Wars",
-	"description": "",
+	"description": "A single page that shows random Star Wars planet at each reload or each button click.",
 	"stack": ["React", "API"],
 	"occasion": "",
 	"thumbnail": "./images/starwars.jpg",
-	"link": "https://codepen.io/andreaweb/full/wWzqgM/"
+	"link": "https://andreaweb.github.io/star-wars/"
 },
 {
 	"name": "Shoes Store",
-	"description": "",
+	"description": "Consists of a single page that simulates a shoes and accessories store. Clicking on the shopping button updates the shopping bag. Clicking on a suggested product changes active product. Clicking on a thumbnail or thumbnail arrow changes active thumbnail (there's only one main picture, so it stays the same). Other than that most of the links are just decorative and will not work.",
 	"stack": ["React"],
 	"occasion": "",
 	"thumbnail": "./images/shoesstore.jpg",
-	"link": "https://codepen.io/andreaweb/full/wWzqgM/"
+	"link": "https://andreaweb.github.io/shoes-store/"
 }
 
+]
