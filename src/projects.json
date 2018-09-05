@@ -1,89 +1,89 @@
 {
 	"name": "Wikipedia Viewer",
-	"description": "",
-	"stack": ["jquery", "API"],
+	"description": "This project connects to the Wikipedia API and returns the input query as a list. The list will display: title, a short description of each result and image if available",
+	"stack": ["Jquery", "API"],
 	"occasion": "FreeCodeCamp",
 	"thumbnail": "./images/wikipedia.jpg",
 	"link": "https://codepen.io/andreaweb/full/wWzqgM/"
 },
 {
 	"name": "Pomodoro Clock",
-	"description": "",
-	"stack": ["jquery", "API"],
+	"description": "You can set for how long you wanna work and for how long you wanna chill, and this clock will set off an alarm when it's time to switch.",
+	"stack": ["Jquery"],
 	"occasion": "FreeCodeCamp",
-	"thumbnail": "./images/wikipedia.jpg",
-	"link": "https://codepen.io/andreaweb/full/wWzqgM/"
+	"thumbnail": "./images/pomodoro.jpg",
+	"link": "https://codepen.io/andreaweb/full/oLmoAq"
 },
 {
 	"name": "Javascript Calculator",
-	"description": "",
-	"stack": ["jquery", "API"],
+	"description": "Simple calculator. Doesn't include percentages. Includes negative numbers.",
+	"stack": ["Jquery"],
 	"occasion": "FreeCodeCamp",
-	"thumbnail": "./images/wikipedia.jpg",
-	"link": "https://codepen.io/andreaweb/full/wWzqgM/"
+	"thumbnail": "./images/calculator.jpg",
+	"link": "https://codepen.io/andreaweb/full/akRgRK/"
 },
 {
 	"name": "Weather API",
-	"description": "",
-	"stack": ["jquery", "API"],
+	"description": "Displays current weather based on your location. Requires geolocation to be active. Background image will change depending on weather conditions.",
+	"stack": ["Jquery", "API"],
 	"occasion": "FreeCodeCamp",
-	"thumbnail": "./images/wikipedia.jpg",
-	"link": "https://codepen.io/andreaweb/full/wWzqgM/"
+	"thumbnail": "./images/weather.jpg",
+	"link": "https://codepen.io/andreaweb/full/weqWMJ/"
 },
 {
 	"name": "Super Dario",
-	"description": "",
-	"stack": ["jquery", "API"],
-	"occasion": "FreeCodeCamp",
-	"thumbnail": "./images/wikipedia.jpg",
-	"link": "https://codepen.io/andreaweb/full/wWzqgM/"
+	"description": "A very simple game, meant to be a sample of a larger one. Super Dario will walk/run forever once the game starts. The user can make Dario jump to avoid enemies. Dario will become smaller after being hit by an enemy once, and die after being hit twice. The enemies will show up in constant pace. This project uses gulp and webpack for bundling and minification.",
+	"stack": ["CSS Animations", "Javascript"],
+	"occasion": "",
+	"thumbnail": "./images/dario.jpg",
+	"link": "https://andreaweb.github.io/super-dario/"
 },
 {
 	"name": "Restaurant Reviews",
-	"description": "",
-	"stack": ["jquery", "API"],
-	"occasion": "FreeCodeCamp",
-	"thumbnail": "./images/wikipedia.jpg",
-	"link": "https://codepen.io/andreaweb/full/wWzqgM/"
+	"description": "This project connects to a local JSON to display a list of restaurants and their respective reviews. It also connects to a Map API to display their locations. Visited pages will be available if the user goes offline. This project uses correct focus, alternative text and aria-roles.",
+	"stack": ["Service Worker", "API", "Accessibility", "Javascript"],
+	"occasion": "Udacity",
+	"thumbnail": "./images/restaurant.jpg",
+	"link": "https://andreaweb.github.io/mws-restaurant-stage-1/"
 },
 {
 	"name": "Arcade Game",
-	"description": "",
-	"stack": ["jquery", "API"],
-	"occasion": "FreeCodeCamp",
-	"thumbnail": "./images/wikipedia.jpg",
-	"link": "https://codepen.io/andreaweb/full/wWzqgM/"
+	"description": "A game similar to 'Frogger'. Your goal is to reach the water at the top of the screen; waves of randomly placed and paced enemies will try and stop you. You can get extra points by lingering on the stones.",
+	"stack": ["HTML5 Canvas", "Javascript"],
+	"occasion": "Udacity",
+	"thumbnail": "./images/arcade.jpg",
+	"link": "https://andreaweb.github.io/frontend-nanodegree-arcade-game/"
 },
 {
 	"name": "My Reads",
-	"description": "",
-	"stack": ["jquery", "API"],
-	"occasion": "FreeCodeCamp",
-	"thumbnail": "./images/wikipedia.jpg",
-	"link": "https://codepen.io/andreaweb/full/wWzqgM/"
+	"description": "A shelf app that displays books that you're reading, planning to read, or have finished. You can add more books in the search page, and you can change the shelves books are in or remove them from the shelves in either page.",
+	"stack": ["React", "API"],
+	"occasion": "Udacity",
+	"thumbnail": "./images/myreads.jpg",
+	"link": "https://andreaweb.github.io/reactnd-project-myreads-starter/"
 },
 {
 	"name": "Neighbourhood Map",
-	"description": "",
-	"stack": ["jquery", "API"],
-	"occasion": "FreeCodeCamp",
-	"thumbnail": "./images/wikipedia.jpg",
-	"link": "https://codepen.io/andreaweb/full/wWzqgM/"
+	"description": "This project connects to Google Maps' and Yelp's API's to display businesses around Vicente de Carvalho. In the input at the bottom, you can change the type of businesses displayed. You cannot change the location. This project works partially offline (previous API results will be displayed after you go offline, but reloading the page will stop the app).",
+	"stack": ["React", "API", "Accessibility", "Service Worker"],
+	"occasion": "Udacity",
+	"thumbnail": "./images/map.jpg",
+	"link": "https://andreaweb.github.io/neighbourhood-map/"
 },
 {
 	"name": "Star Wars",
 	"description": "",
-	"stack": ["jquery", "API"],
-	"occasion": "FreeCodeCamp",
-	"thumbnail": "./images/wikipedia.jpg",
+	"stack": ["React", "API"],
+	"occasion": "",
+	"thumbnail": "./images/starwars.jpg",
 	"link": "https://codepen.io/andreaweb/full/wWzqgM/"
 },
 {
 	"name": "Shoes Store",
 	"description": "",
-	"stack": ["jquery", "API"],
-	"occasion": "FreeCodeCamp",
-	"thumbnail": "./images/wikipedia.jpg",
+	"stack": ["React"],
+	"occasion": "",
+	"thumbnail": "./images/shoesstore.jpg",
 	"link": "https://codepen.io/andreaweb/full/wWzqgM/"
 }
 

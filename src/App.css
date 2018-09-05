@@ -1,28 +1,166 @@
-.App {
-  text-align: center;
+:root{
+  --dark-blue: #16171C;
+  --light-orange: #efa777;
+  --dark-orange: #b6631d;
+  --dark-green: #142419;
+}
+.App{
+  font-family: sans-serif;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: 55px auto;
+  grid-template-areas:
+  "h h h h h h"
+  "m m m m m m"
+  "m m m m m m"
+}
+p,h5,h3{
+  margin: 0
+}
+.header{
+  grid-area: h;
+  display: flex;
+}
+.filter{
+  display: flex;
+  justify-content: space-around;
+  flex: 3;
+}
+.filter a:hover {
+    background: var(--dark-blue)
+}
+.filter a{
+    text-decoration: underline;
+    color: white;
+    background: var(--light-orange);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.intro{
+    padding: 25px 10px 5px 10px;
+    font-family: 'Sunflower', sans-serif;
+    font-size: 22px;
+    flex: 1;
+}
+.main{
+  display: flex;
+  grid-area: m
+}
+.aside{
+  padding: 10px;
+  flex: 1;
+}
+.portfolio{
+  display: flex;
+  flex: 3;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.info{
+  margin-left: auto
+}
+.project{
+  margin: 18px;
+  flex-basis: 35%;
+}
+.card{
+  position:relative;
+}
+.card:hover:after{
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(20,36,25, 0.5);
+  pointer-events: none;
+}
+.card__image{
+  max-width: 100%;
+  border-radius: 3px;
+}
+.description{
+  margin-bottom: 10px
+}
+.tag{
+    background: #142419;
+    color: #fff;
+    font-size: 80%;
+    padding: 3px 6px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.tag.occasion{
+  color: #142419;
+  font-size: 85%;
+  background-color: #fff;
+}
+.contact{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.contact a i{
+  font-size: 36px;
+}
+.contact a i:hover{
+  color: var(--light-orange)
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+@media screen and (max-height: 500px),
+screen and (max-width: 900px){
+  .main{
+    display: block;
+  }
+  .aside{
+    text-align: center;
+  }
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+/*utilities*/
+/*backgrounds*/
+.dark-blue-bg{
+  background-color: var(--dark-blue)
+}
+.light-orange-bg{
+  background-color: var(--light-orange)
+}
+.dark-orange-bg{
+  background-color: var(--dark-orange)
+}
+.dark-green-bg{
+  background-color: var(--dark-green)
+}
+.pink-bg{
+  background-color: var(--pink)
+}
+.white-bg{
+  background-color: #fff
 }
 
-.App-title {
-  font-size: 1.5em;
+/*colors*/
+.dark-blue{
+  color: var(--dark-blue)
+}
+.light-orange{
+  color: var(--light-orange)
+}
+.dark-orange{
+  color: var(--dark-orange)
+}
+.dark-green{
+  color: var(--dark-green)
+}
+.pink{
+  color: var(--pink)
+}
+.white{
+  color: #fff
 }
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+/*filters - useful to classify projects*/
