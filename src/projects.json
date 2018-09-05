@@ -1,0 +1,89 @@
+{
+	"name": "Wikipedia Viewer",
+	"description": "",
+	"stack": ["jquery", "API"],
+	"occasion": "FreeCodeCamp",
+	"thumbnail": "./images/wikipedia.jpg",
+	"link": "https://codepen.io/andreaweb/full/wWzqgM/"
+},
+{
+	"name": "Pomodoro Clock",
+	"description": "",
+	"stack": ["jquery", "API"],
+	"occasion": "FreeCodeCamp",
+	"thumbnail": "./images/wikipedia.jpg",
+	"link": "https://codepen.io/andreaweb/full/wWzqgM/"
+},
+{
+	"name": "Javascript Calculator",
+	"description": "",
+	"stack": ["jquery", "API"],
+	"occasion": "FreeCodeCamp",
+	"thumbnail": "./images/wikipedia.jpg",
+	"link": "https://codepen.io/andreaweb/full/wWzqgM/"
+},
+{
+	"name": "Weather API",
+	"description": "",
+	"stack": ["jquery", "API"],
+	"occasion": "FreeCodeCamp",
+	"thumbnail": "./images/wikipedia.jpg",
+	"link": "https://codepen.io/andreaweb/full/wWzqgM/"
+},
+{
+	"name": "Super Dario",
+	"description": "",
+	"stack": ["jquery", "API"],
+	"occasion": "FreeCodeCamp",
+	"thumbnail": "./images/wikipedia.jpg",
+	"link": "https://codepen.io/andreaweb/full/wWzqgM/"
+},
+{
+	"name": "Restaurant Reviews",
+	"description": "",
+	"stack": ["jquery", "API"],
+	"occasion": "FreeCodeCamp",
+	"thumbnail": "./images/wikipedia.jpg",
+	"link": "https://codepen.io/andreaweb/full/wWzqgM/"
+},
+{
+	"name": "Arcade Game",
+	"description": "",
+	"stack": ["jquery", "API"],
+	"occasion": "FreeCodeCamp",
+	"thumbnail": "./images/wikipedia.jpg",
+	"link": "https://codepen.io/andreaweb/full/wWzqgM/"
+},
+{
+	"name": "My Reads",
+	"description": "",
+	"stack": ["jquery", "API"],
+	"occasion": "FreeCodeCamp",
+	"thumbnail": "./images/wikipedia.jpg",
+	"link": "https://codepen.io/andreaweb/full/wWzqgM/"
+},
+{
+	"name": "Neighbourhood Map",
+	"description": "",
+	"stack": ["jquery", "API"],
+	"occasion": "FreeCodeCamp",
+	"thumbnail": "./images/wikipedia.jpg",
+	"link": "https://codepen.io/andreaweb/full/wWzqgM/"
+},
+{
+	"name": "Star Wars",
+	"description": "",
+	"stack": ["jquery", "API"],
+	"occasion": "FreeCodeCamp",
+	"thumbnail": "./images/wikipedia.jpg",
+	"link": "https://codepen.io/andreaweb/full/wWzqgM/"
+},
+{
+	"name": "Shoes Store",
+	"description": "",
+	"stack": ["jquery", "API"],
+	"occasion": "FreeCodeCamp",
+	"thumbnail": "./images/wikipedia.jpg",
+	"link": "https://codepen.io/andreaweb/full/wWzqgM/"
+}
+
