@@ -123,6 +123,12 @@ screen and (max-width: 900px){
   .aside{
     text-align: center;
   }
+  .contact{
+    top: -20px;
+    width: 150px;
+    left: 50%;
+    bottom: unset;
+  }
 }
 
 /*utilities*/
