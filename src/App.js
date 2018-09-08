@@ -20,10 +20,21 @@ class App extends Component {
   </header>
   <main class="main light-orange-bg">
     <aside class="aside dark-blue-bg white">
-      <h5>I'm searching for a new job at a place that: <ol><li>Has technical challenges and a fast pace</li><li>Cares more about actual deliver and performance than appearances</li><li>Offers a good work environment that help you focus and/or is an adept of home office</li></ol> If your company fits the description and you like my portfolio, please message me!</h5>
+      <h5>
+      I'm searching for a new job at a place that: 
+      <ol>
+        <li>Has technical challenges and a fast pace</li>
+        <li>Cares more about actual deliver and performance than appearances</li>
+        <li>Offers a good work environment that help you focus and/or 
+          is an adept of home office
+        </li>
+      </ol> 
+      If your company fits the description and you like my portfolio, 
+      please message me!
+      </h5>
       <section class="contact">
         <a 
-          href="https://www.linkedin.com/in/andreafrontend/" 
+          href="https://www.linkedin.com/in/andreafrontend/?locale=en_US" 
           title="LinkedIn" 
           rel="noopener noreferrer" 
           target="_blank"
