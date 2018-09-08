@@ -6,8 +6,34 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      projects: projects
+      projects: projects,
+      checkedProjects: [],
+      search: [
+        "Jquery", 
+        "API", 
+        "CSS Animations",
+        "HTML5 Canvas",
+        "Service Worker",
+        "Accessibility",
+        "Javascript",
+        "React"
+        ]
     }
+  }
+  componentDidMount(){
+    const filteredArr = this.state.projects
+    this.setState({
+      projects: filteredArr.filter(
+        project =>    
+          project.stack.map(
+            (stack) => 
+            this.state.search.includes(stack)
+          ).reduce(
+            (prev, next) =>
+            prev == true || next == true ? true : false
+          )
+      )
+    })
   }
   render() {
     return (
@@ -61,7 +87,7 @@ class App extends Component {
         </a>
       </section>
     </aside>
-    <div class="portfolio">
+<div class="portfolio">
       {this.state.projects.map(
           (project, key) =>
           <section class="project" key={key}>

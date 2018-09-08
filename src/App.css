@@ -115,6 +115,10 @@ p,h5,h3{
   color: var(--light-orange)
 }
 
+.display-none{
+  display: none;
+}
+
 @media screen and (max-height: 500px),
 screen and (max-width: 900px){
   .main{
