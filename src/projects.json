@@ -85,6 +85,15 @@
 	"occasion": "",
 	"thumbnail": "./images/shoesstore.jpg",
 	"link": "https://andreaweb.github.io/shoes-store/"
+},
+{
+	"name": "SP Agency - Job Ad",
+	"description": "A simple & responsive HTML/CSS page, built just to practice a little, based on a layout from a SP company.",
+	"stack": ["CSS Grid"],
+	"occasion": "",
+	"thumbnail": "./images/dbrag.jpg",
+	"link": "https://andreaweb.github.io/front-end-challenges/dbrag/index.html"
 }
+
 
 ]
