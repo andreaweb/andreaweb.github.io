@@ -16,7 +16,8 @@ class App extends Component {
         "Service Worker",
         "Accessibility",
         "Javascript",
-        "React"
+        "React",
+        "CSS Grid"
         ]
     }
   }
