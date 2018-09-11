@@ -93,5 +93,13 @@
 	"occasion": "",
 	"thumbnail": "./images/dbrag.jpg",
 	"link": "https://andreaweb.github.io/front-end-challenges/dbrag/index.html"
+},
+{
+	"name": "Movie List",
+	"description": "A responsive React App that uses the Open Movie Database API. You can search movies by name and click to read details.",
+	"stack": ["React", "Redux", "API"],
+	"occasion": "",
+	"thumbnail": "./images/movies.jpg",
+	"link": "http://hideous-stage.surge.sh/"
 }
 ]
