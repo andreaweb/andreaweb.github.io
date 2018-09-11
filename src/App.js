@@ -17,7 +17,8 @@ class App extends Component {
         "Accessibility",
         "Javascript",
         "React",
-        "CSS Grid"
+        "CSS Grid",
+        "Redux"
         ]
     }
   }
