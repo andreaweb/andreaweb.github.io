@@ -89,7 +89,11 @@ class App extends Component {
       {this.state.projects.map(
           (project, key) =>
           <section 
-            className="project" 
+            className={
+              this.state.activeDescription===key
+              ? "project active"
+              : "project"
+            }
             key={key} 
             id={key} 
             ref={ this.addProject }
@@ -122,8 +126,8 @@ class App extends Component {
               <p 
                 className={ 
                  this.state.activeDescription===key
-                  ? "project__description" 
-                  : "display-none"
+                  ? "project__description project__description--open" 
+                  : "project__description"
                 }
               >
               

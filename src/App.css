@@ -1,12 +1,15 @@
 :root{
-
+  --black: #050505;
+  --gray: #B5B5B5;
+  --white: #F7F7F7;
+  --pink: #F4ABD7;
+  --yellow: #F4C904;
 }
 .App{
   font-family: 'Sunflower', sans-serif;
   font-weight: 300;
-  background: white;
-  color: black;
-  min-height: 100vh;
+  background: var(--white);
+  color: var(--black);
 }
 p,h5,h3{
   margin: 0
@@ -15,7 +18,7 @@ p,h5,h3{
   padding: 20px;
   display:flex;
   align-items: center;
-  border-bottom: 2px solid gray;
+  border-bottom: 2px solid var(--gray);
 }
 .header__name{
   margin:0 40px 0 0;
@@ -70,11 +73,13 @@ p,h5,h3{
   background-size: cover;
   border-radius: 50%;
   display: block;
-  border: 2px solid pink;
+  border: 2px solid var(--pink);
   -webkit-filter: grayscale(1);
 }
+.project:hover .project__link,
 .project__link:hover,
-.project__link:focus{
+.project__link:focus,
+.active .project__link{
   -webkit-filter: none;
   outline: none;
 }
@@ -86,10 +91,14 @@ p,h5,h3{
   color: gray;
   cursor: pointer;
 }
+
 .project__icon:hover,
 .project__icon:focus{
   color: black;
   outline: none;
+}
+.active .project__icon:before{
+  content:'\f068'; /*changes plus to minus*/
 }
 .project__stack{
   font-size: 14px;
@@ -107,11 +116,20 @@ p,h5,h3{
 .project__description{
   font-size: 14px;
   text-align: left;
-  border: 2px solid gray;
+  border: 2px solid var(--yellow);
   padding: 10px;
-  margin: 10px;
+  margin: 10px 0 0 0;
+  width: 175px;
+  position: absolute;
+  background: white;
+  opacity: 0;
+  transition: .2s;
+  pointer-events: none;
 }
-
+.project__description--open{
+  z-index: 9;
+  opacity: 1;
+}
 .contact{
   display: flex;
   justify-content: space-around;
@@ -131,12 +149,6 @@ p,h5,h3{
 
 @media screen and (max-height: 500px),
 screen and (max-width: 900px){
-  .main{
-    display: block;
-  }
-  .aside{
-    text-align: center;
-  }
   .contact{
     top: -20px;
     width: 150px;
@@ -159,18 +171,6 @@ screen and (max-width: 900px){
 }
 
 /*colors*/
-.dark-blue{
-  color: var(--dark-blue)
-}
-.light-orange{
-  color: var(--light-orange)
-}
-.dark-orange{
-  color: var(--dark-orange)
-}
-.dark-green{
-  color: var(--dark-green)
-}
 .pink{
   color: var(--pink)
 }
