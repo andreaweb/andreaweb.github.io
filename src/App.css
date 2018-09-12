@@ -66,23 +66,20 @@ p,h5,h3{
   margin: 18px;
   flex-basis: 35%;
 }
-.card{
-  position:relative;
+.project__link{
+  width: 100px;
+  height: 100px;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 50%;
+  display: block;
+  border: 2px solid pink;
+  -webkit-filter: grayscale(1);
 }
-.card:hover:after{
-  position: absolute;
-  content: " ";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  background-color: rgba(20,36,25, 0.5);
-  pointer-events: none;
-}
-.card__image{
-  max-width: 100%;
-  border-radius: 3px;
+.project__link:hover,
+.project__link:focus{
+  -webkit-filter: none;
+  outline: none;
 }
 .description{
   margin-bottom: 10px
