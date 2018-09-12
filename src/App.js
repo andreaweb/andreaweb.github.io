@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import projects from './projects.json';
+import summary from './summary.json';
 import './App.css';
 
 class App extends Component {
@@ -9,6 +10,7 @@ class App extends Component {
       projects: projects,
       activeDescription: null,
       projectsArr: [],
+      currentLanguage: 'EN',
       checkedProjects: [],
       search: [
         "Jquery", 
@@ -50,6 +52,9 @@ class App extends Component {
       this.setState({activeDescription: key})
     }
   }
+  changeLanguage = (lang) => {
+    this.setState({currentLanguage: lang})
+  }
   render() {
     return (
       <div className="App">
@@ -60,22 +65,90 @@ class App extends Component {
           </h1>
           <nav className="header__links display-none">
             <ul className="header__menu">
-              <li className="header__menu__item">PROJECTS</li>
-              <li className="header__menu__item">SUMMARY</li>
+              <li className="header__menu__item">
+                  { 
+                    this.state.currentLanguage === "EN"
+                    ?
+                      "PROJECTS"
+                    : null
+                  }
+                  { 
+                    this.state.currentLanguage === "PT"
+                    ?
+                      "PROJETOS"
+                    : null
+                  }
+                  { 
+                    this.state.currentLanguage === "NL"
+                    ?
+                      "PROJECTS"
+                    : null
+                  } 
+              </li>
+              <li className="header__menu__item">
+                { 
+                    this.state.currentLanguage === "EN"
+                    ?
+                      "SUMMARY"
+                    : null
+                  }
+                  { 
+                    this.state.currentLanguage === "PT"
+                    ?
+                      "RESUMO"
+                    : null
+                  }
+                  { 
+                    this.state.currentLanguage === "NL"
+                    ?
+                      "SUMMARY"
+                    : null
+                  }
+              </li>
             </ul>
           </nav>
           <div className="filter">
 
           </div>
-          <nav className="header__links header__links--language display-none">
+          <nav className="header__links header__links--language">
             <ul className="header__menu header__menu--language">
-                <li className="header__menu__item header__menu__item--language">
+                <li 
+                  role="button"
+                  tabIndex="0"
+                  title="Change Language to English"
+                  onClick={() => this.changeLanguage('EN')}
+                  className={
+                    this.state.currentLanguage === 'EN'
+                    ? "header__menu__item header__menu__item--language pink bold"
+                    : "header__menu__item header__menu__item--language"
+                  }
+                >
                   EN
                 </li>
-                <li className="header__menu__item header__menu__item--language">
+                <li 
+                  role="button"
+                  tabIndex="0"
+                  title="Trocar idioma para Português"
+                  onClick={() => this.changeLanguage('PT')}
+                  className={
+                    this.state.currentLanguage === 'PT'
+                    ? "header__menu__item header__menu__item--language pink bold"
+                    : "header__menu__item header__menu__item--language"
+                  }
+                >
                   PT
                 </li>
-                <li className="header__menu__item header__menu__item--language">
+                <li 
+                  role="button"
+                  tabIndex="0"
+                  title=""
+                  onClick={() => this.changeLanguage('NL')}
+                  className={
+                    this.state.currentLanguage === 'NL'
+                    ? "header__menu__item header__menu__item--language pink bold"
+                    : "header__menu__item header__menu__item--language"
+                  }
+                >
                   NL
                 </li>
             </ul>
@@ -102,13 +175,21 @@ class App extends Component {
                 className="project__link"
                 style={{backgroundImage: `url(${project.thumbnail})`}} 
                 href={project.link} 
-                title={project.name} 
+                title={
+                  this.state.currentLanguage === "EN" 
+                  ? project.name
+                  : project.nome
+                } 
                 rel="noopener noreferrer" 
                 target="_blank"
               >
               </a>
               <h3 className="project__title">
-                {project.name}
+                {
+                  this.state.currentLanguage === "EN" 
+                  ? project.name
+                  : project.nome
+                } 
                 <i 
                   role="link" 
                   onClick={(e) => this.toggleDescription(e,key)}
@@ -131,7 +212,11 @@ class App extends Component {
                 }
               >
               
-                {project.description}
+                {
+                  this.state.currentLanguage === "EN" 
+                  ? project.description
+                  : project.descricao
+                } 
               
               </p>
             
@@ -143,13 +228,52 @@ class App extends Component {
 
     <section className="summary">
       <div className="summary__text">
-      <p>Hello, I'm Andrea and I work with front-end development since 2013.<br />
-      I'm skilled at HTML5, CSS3, ES6 and React. I also have experience with Polymer.<br />
-      Currently, I'm learning tests in React and Redux.</p>
-
-      <p>I have written an article (in Portuguese) for the local community. 
-
-      
+      { 
+        this.state.currentLanguage === "EN"
+        ?
+          summary[0].textLines.map(
+            (text, key) =>
+            <p key="key">{text}</p>
+          )
+        : null
+      }
+      { 
+        this.state.currentLanguage === "PT"
+        ?
+          summary[1].textLines.map(
+            (text, key) =>
+            <p key="key">{text}</p>
+          )
+        : null
+      }
+      { 
+        this.state.currentLanguage === "NL"
+        ?
+          summary[2].textLines.map(
+            (text, key) =>
+            <p key="key">{text}</p>
+          )
+        : null
+      }
+      <p>
+       { 
+        this.state.currentLanguage === "EN"
+        ?
+          summary[0].articleLine
+        : null
+      }
+      { 
+        this.state.currentLanguage === "PT"
+        ?
+          summary[1].articleLine
+        : null
+      }
+      { 
+        this.state.currentLanguage === "NL"
+        ?
+          summary[2].articleLine
+        : null
+      } 
         <a 
           className="yellow"
           target="_blank"
@@ -157,7 +281,24 @@ class App extends Component {
           title="Guias de Estudo Front-End"
           href="https://medium.com/@a.cosmos/alguns-guias-de-estudo-front-end-especialmente-para-principiantes-bfa480aca526"
         >
-          Check it out!
+          { 
+            this.state.currentLanguage === "EN"
+            ?
+              summary[0].articleCall
+            : null
+          }
+          { 
+            this.state.currentLanguage === "PT"
+            ?
+              summary[1].articleCall
+            : null
+          }
+          { 
+            this.state.currentLanguage === "NL"
+            ?
+              summary[2].articleCall
+            : null
+          } 
         </a>
       </p>
       </div>

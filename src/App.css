@@ -35,6 +35,8 @@ p,h5,h3{
 .header__menu__item{
   display: inline;
   margin: 0 10px;
+  cursor: pointer;
+  outline: none;
 }
 .header__menu__item--language{
   margin: 0;
@@ -42,6 +44,8 @@ p,h5,h3{
 .header__menu__item--language:after{
   content: '|';
   display: inline-block;
+  color: var(--black) !important;
+  font-weight: 300 !important;
   margin: 0 5px;
 }
 .header__menu__item--language:last-child:after{
@@ -74,7 +78,7 @@ p,h5,h3{
   border-radius: 50%;
   display: block;
   border: 2px solid var(--pink);
-  -webkit-filter: grayscale(1);
+  -webkit-filter: grayscale(.8);
 }
 .project:hover .project__link,
 .project__link:hover,
@@ -85,6 +89,7 @@ p,h5,h3{
 }
 .project__title{
   font-size: 16px;
+  margin-top: 10px;
 }
 .project__icon{
   margin-left: 20px;
@@ -168,6 +173,9 @@ screen and (max-width: 900px){
 
 /*utilities*/
 /*utilities - font-related*/
+.bold{
+  font-weight: 700;
+}
 .normal{
   font-weight: 500;
 }
@@ -184,7 +192,7 @@ screen and (max-width: 900px){
   color: var(--pink)
 }
 .yellow{
-  color: var(--yellow)
+  color: var(--yellow) !important
 }
 
 /*filters - useful to classify projects*/
