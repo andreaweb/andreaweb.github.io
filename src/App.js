@@ -7,6 +7,8 @@ class App extends Component {
     super(props);
     this.state = {
       projects: projects,
+      activeDescription: null,
+      projectsArr: [],
       checkedProjects: [],
       search: [
         "Jquery", 
@@ -37,6 +39,17 @@ class App extends Component {
       )
     })
   }
+  addProject = (project) => {
+    this.state.projectsArr.push(project)
+  }
+  toggleDescription = (e,key) => {
+    const current = this.state.activeDescription;
+    if(current === key){
+      this.setState({activeDescription: null})
+    }else{
+      this.setState({activeDescription: key})
+    }
+  }
   render() {
     return (
       <div className="App">
@@ -45,16 +58,16 @@ class App extends Component {
             <span className="normal">ANDREA</span>
             <span className="light">SANTANA</span>
           </h1>
-          <nav className="header__links">
+          <nav className="header__links display-none">
             <ul className="header__menu">
               <li className="header__menu__item">PROJECTS</li>
               <li className="header__menu__item">SUMMARY</li>
             </ul>
           </nav>
-          <div class="filter">
+          <div className="filter">
 
           </div>
-          <nav className="header__links header__links--language">
+          <nav className="header__links header__links--language display-none">
             <ul className="header__menu header__menu--language">
                 <li className="header__menu__item header__menu__item--language">
                   EN
@@ -71,11 +84,16 @@ class App extends Component {
   
       
       
-    <main class="portfolio">
+    <main className="portfolio">
     
       {this.state.projects.map(
           (project, key) =>
-          <section class="project" key={key}>
+          <section 
+            className="project" 
+            key={key} 
+            id={key} 
+            ref={ this.addProject }
+          >
               <a 
                 className="project__link"
                 style={{backgroundImage: `url(${project.thumbnail})`}} 
@@ -86,8 +104,13 @@ class App extends Component {
               >
               </a>
               <h3 className="project__title">
-                {project.name} 
-                <i role="link" tabindex="0" class="fa fa-plus project__icon" />
+                {project.name}
+                <i 
+                  role="link" 
+                  onClick={(e) => this.toggleDescription(e,key)}
+                  tabIndex="0" 
+                  className="fa fa-plus project__icon" 
+                />
               </h3>
               <span className="project__stack">
                 {project.stack.map(
@@ -96,8 +119,16 @@ class App extends Component {
                   )
                 }
               </span>
-              <p className="project__description">
+              <p 
+                className={ 
+                 this.state.activeDescription===key
+                  ? "project__description" 
+                  : "display-none"
+                }
+              >
+              
                 {project.description}
+              
               </p>
             
           </section>
@@ -106,14 +137,14 @@ class App extends Component {
       
     </main>
 
-  <footer class="contact">
+  <footer className="contact display-none">
         <a 
           href="https://www.linkedin.com/in/andreafrontend/?locale=en_US" 
           title="LinkedIn" 
           rel="noopener noreferrer" 
           target="_blank"
         >
-          <i class="fa fa-linkedin-square white"></i>
+          <i className="fa fa-linkedin-square white"></i>
         </a>
 
         <a 
@@ -122,7 +153,7 @@ class App extends Component {
           rel="noopener noreferrer" 
           target="_blank"
         >
-          <i class="fa fa-twitter-square white"></i>
+          <i className="fa fa-twitter-square white"></i>
         </a>
 
         <a 
@@ -131,7 +162,7 @@ class App extends Component {
           rel="noopener noreferrer" 
           target="_blank"
         >
-          <i class="fa fa-envelope white"></i>
+          <i className="fa fa-envelope white"></i>
         </a>
       </footer>
       </div>
