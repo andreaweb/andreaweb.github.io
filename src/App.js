@@ -40,17 +40,37 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header class="dark-blue-bg white header">
-    <p class="intro">Hi! I'm Andrea.</p>
-    <div class="filter">
+        <header className="header">
+          <h1 className="header__name">
+            ANDREA<span>SANTANA</span>
+          </h1>
+          <nav>
+            <ul className="header__menu">
+              <li className="header__menu__item">PROJECTS</li>
+              <li className="header__menu__item">SUMMARY</li>
+            </ul>
 
-    </div>
-  </header>
-  <main class="main light-orange-bg">
+            <ul className="header__menu header__menu--language">
+              <li className="header__menu__item header__menu__item--language">
+                EN
+              </li>
+              <li className="header__menu__item header__menu__item--language">
+                PT
+              </li>
+              <li className="header__menu__item header__menu__item--language">
+                NL
+              </li>
+            </ul>
+          </nav>
+        </header>
+  <main class="main">
   
       
       
 <div class="portfolio">
+    <div class="filter">
+
+    </div>
       {this.state.projects.map(
           (project, key) =>
           <section class="project" key={key}>

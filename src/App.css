@@ -5,52 +5,48 @@
   --dark-green: #142419;
 }
 .App{
-  font-family: sans-serif;
-  display: grid;
+  font-family: 'Sunflower', sans-serif;
+  font-weight: 300;
+  background: white;
+  color: black;
   min-height: 100vh;
-  grid-template-rows: 55px auto;
-  grid-template-areas:
-  "h h h h h h"
-  "m m m m m m"
-  "m m m m m m"
 }
 p,h5,h3{
   margin: 0
 }
 .header{
-  grid-area: h;
-  display: flex;
+  padding: 20px;
+  display:flex;
+  border-bottom: 2px solid gray;
+}
+.header__name{
+  margin:0;
+}
+.header__menu{
+  padding: 0;
+  list-style-type: none;
+  display: inline;
+}
+.header__menu--language{
+  margin: 0 20px;
+}
+.header__menu__item{
+  display: inline;
+  margin: 0 10px;
+}
+.header__menu__item--language{
+  margin: 0;
+}
+.header__menu__item--language:after{
+  content: '|';
+  display: inline-block;
+  margin: 0 5px;
+}
+.header__menu__item--language:last-child:after{
+  content: '';
 }
 .filter{
-  display: flex;
-  justify-content: space-around;
-  flex: 3;
-}
-.filter a:hover {
-    background: var(--dark-blue)
-}
-.filter a{
-    text-decoration: underline;
-    color: white;
-    background: var(--light-orange);
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.intro{
-    padding: 25px 10px 5px 10px;
-    font-family: 'Sunflower', sans-serif;
-    font-size: 22px;
-    flex: 1;
-}
-.main{
-  display: flex;
-  grid-area: m
-}
-.aside{
-  padding: 10px;
-  flex: 1;
+
 }
 .portfolio{
   display: flex;
