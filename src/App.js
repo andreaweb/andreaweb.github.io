@@ -141,12 +141,33 @@ class App extends Component {
       
     </main>
 
-  <footer className="contact display-none">
+    <section className="summary">
+      <div className="summary__text">
+      <p>Hello, I'm Andrea and I work with front-end development since 2013.<br />
+      I'm skilled at HTML5, CSS3, ES6 and React. I also have experience with Polymer.<br />
+      Currently, I'm learning tests in React and Redux.</p>
+
+      <p>I have written an article (in Portuguese) for the local community. 
+
+      
+        <a 
+          className="yellow"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Guias de Estudo Front-End"
+          href="https://medium.com/@a.cosmos/alguns-guias-de-estudo-front-end-especialmente-para-principiantes-bfa480aca526"
+        >
+          Check it out!
+        </a>
+      </p>
+      </div>
+<div className="contact">
         <a 
           href="https://www.linkedin.com/in/andreafrontend/?locale=en_US" 
           title="LinkedIn" 
           rel="noopener noreferrer" 
           target="_blank"
+          className="contact__link"
         >
           <i className="fa fa-linkedin-square white"></i>
         </a>
@@ -156,6 +177,7 @@ class App extends Component {
           title="Twitter" 
           rel="noopener noreferrer" 
           target="_blank"
+          className="contact__link"
         >
           <i className="fa fa-twitter-square white"></i>
         </a>
@@ -165,10 +187,12 @@ class App extends Component {
           title="E-mail" 
           rel="noopener noreferrer" 
           target="_blank"
+          className="contact__link"
         >
           <i className="fa fa-envelope white"></i>
         </a>
-      </footer>
+        </div>
+    </section>
       </div>
     );
   }

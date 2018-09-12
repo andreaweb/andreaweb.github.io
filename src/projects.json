@@ -80,7 +80,7 @@
 },
 {
 	"name": "Shoes Store",
-	"description": "Consists of a single page that simulates a shoes and accessories store. Clicking on the shopping button updates the shopping bag. Clicking on a suggested product changes active product. Clicking on a thumbnail or thumbnail arrow changes active thumbnail (there's only one main picture, so it stays the same). Other than that most of the links are just decorative and will not work.",
+	"description": "A single page. Clicking on the shopping button updates the shopping bag. Clicking on a suggested product changes active product. Clicking on a thumbnail or thumbnail arrow changes active thumbnail. Other than that most of the links are just decorative and will not work.",
 	"stack": ["React"],
 	"occasion": "",
 	"thumbnail": "./images/shoesstore.jpg",
