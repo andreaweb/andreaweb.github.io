@@ -125,7 +125,7 @@
 	"description": "A simple & responsive HTML/CSS page, built just to practice a little, based on a layout from a SP company.",
 	
 	"nome": "Vaga em Agência de SP",
-	"description": "Uma página simples e responsiva em HTML e CSS, feita apenas para praticar um pouco, baseada no layout de uma empresa paulista.",
+	"descricao": "Uma página simples e responsiva em HTML e CSS, feita apenas para praticar um pouco, baseada no layout de uma empresa paulista.",
 
 	"stack": ["CSS Grid"],
 	"thumbnail": "./images/dbrag.jpg",
@@ -136,7 +136,7 @@
 	"description": "A responsive React App that uses the Open Movie Database API. You can search movies by name and click to read details.",
 	
 	"nome": "Lista de Filmes",
-	"description": "Um aplicativo React responsivo que consome a API Open Movie Database. Pode-se pesquisar filmes por nome e clicar neles para ver detalhes.",
+	"descricao": "Um aplicativo React responsivo que consome a API Open Movie Database. Pode-se pesquisar filmes por nome e clicar neles para ver detalhes.",
 
 	"stack": ["React", "Redux", "API"],
 	"thumbnail": "./images/movies.jpg",
