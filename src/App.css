@@ -1,8 +1,5 @@
 :root{
-  --dark-blue: #16171C;
-  --light-orange: #efa777;
-  --dark-orange: #b6631d;
-  --dark-green: #142419;
+
 }
 .App{
   font-family: 'Sunflower', sans-serif;
@@ -17,18 +14,20 @@ p,h5,h3{
 .header{
   padding: 20px;
   display:flex;
+  align-items: center;
   border-bottom: 2px solid gray;
 }
 .header__name{
-  margin:0;
+  margin:0 40px 0 0;
 }
 .header__menu{
   padding: 0;
+  margin: 0;
   list-style-type: none;
   display: inline;
 }
-.header__menu--language{
-  margin: 0 20px;
+.header__links--language{
+  margin-left: auto;
 }
 .header__menu__item{
   display: inline;
@@ -49,8 +48,8 @@ p,h5,h3{
 
 }
 .portfolio{
+  margin: 20px;
   display: flex;
-  flex: 3;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
@@ -59,12 +58,14 @@ p,h5,h3{
   margin-left: auto
 }
 .project{
-  margin: 18px;
-  flex-basis: 35%;
+  width: 200px;
+  margin: 20px;
+  text-align: center;
 }
 .project__link{
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
   background-position: center center;
   background-size: cover;
   border-radius: 50%;
@@ -77,22 +78,40 @@ p,h5,h3{
   -webkit-filter: none;
   outline: none;
 }
-.description{
-  margin-bottom: 10px
+.project__title{
+  font-size: 16px;
 }
-.tag{
-    background: #142419;
-    color: #fff;
-    font-size: 80%;
-    padding: 3px 6px;
-    border-radius: 5px;
-    display: inline-block;
+.project__icon{
+  margin-left: 20px;
+  color: gray;
+  cursor: pointer;
 }
-.tag.occasion{
-  color: #142419;
-  font-size: 85%;
-  background-color: #fff;
+.project__icon:hover,
+.project__icon:focus{
+  color: black;
+  outline: none;
 }
+.project__stack{
+  font-size: 14px;
+  word-wrap: break-word;
+  display: block;
+}
+.project__stack__item:after{
+  content: "/";
+  margin: 0 5px;
+  display: inline-block;
+}
+.project__stack__item:last-child:after{
+  content: "";
+}
+.project__description{
+  font-size: 14px;
+  text-align: left;
+  border: 2px solid gray;
+  padding: 10px;
+  margin: 10px;
+}
+
 .contact{
   display: flex;
   justify-content: space-around;
@@ -108,9 +127,7 @@ p,h5,h3{
   color: var(--light-orange)
 }
 
-.display-none{
-  display: none;
-}
+
 
 @media screen and (max-height: 500px),
 screen and (max-width: 900px){
@@ -129,24 +146,16 @@ screen and (max-width: 900px){
 }
 
 /*utilities*/
-/*backgrounds*/
-.dark-blue-bg{
-  background-color: var(--dark-blue)
+/*utilities - font-related*/
+.normal{
+  font-weight: 500;
 }
-.light-orange-bg{
-  background-color: var(--light-orange)
+.light{
+  font-weight: 300;
 }
-.dark-orange-bg{
-  background-color: var(--dark-orange)
-}
-.dark-green-bg{
-  background-color: var(--dark-green)
-}
-.pink-bg{
-  background-color: var(--pink)
-}
-.white-bg{
-  background-color: #fff
+/*utilities - display-related*/
+.display-none{
+  display: none;
 }
 
 /*colors*/

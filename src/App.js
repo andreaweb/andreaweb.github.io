@@ -42,64 +42,69 @@ class App extends Component {
       <div className="App">
         <header className="header">
           <h1 className="header__name">
-            ANDREA<span>SANTANA</span>
+            <span className="normal">ANDREA</span>
+            <span className="light">SANTANA</span>
           </h1>
-          <nav>
+          <nav className="header__links">
             <ul className="header__menu">
               <li className="header__menu__item">PROJECTS</li>
               <li className="header__menu__item">SUMMARY</li>
             </ul>
-
-            <ul className="header__menu header__menu--language">
-              <li className="header__menu__item header__menu__item--language">
-                EN
-              </li>
-              <li className="header__menu__item header__menu__item--language">
-                PT
-              </li>
-              <li className="header__menu__item header__menu__item--language">
-                NL
-              </li>
-            </ul>
           </nav>
+          <div class="filter">
+
+          </div>
+          <nav className="header__links header__links--language">
+            <ul className="header__menu header__menu--language">
+                <li className="header__menu__item header__menu__item--language">
+                  EN
+                </li>
+                <li className="header__menu__item header__menu__item--language">
+                  PT
+                </li>
+                <li className="header__menu__item header__menu__item--language">
+                  NL
+                </li>
+            </ul>
+            </nav>
         </header>
-  <main class="main">
   
       
       
-<div class="portfolio">
-    <div class="filter">
-
-    </div>
+    <main class="portfolio">
+    
       {this.state.projects.map(
           (project, key) =>
           <section class="project" key={key}>
-                <a 
-                  className="project__link"
-                  style={{backgroundImage: `url(${project.thumbnail})`}} 
-                  href={project.link} 
-                  title={project.name} 
-                  rel="noopener noreferrer" 
-                  target="_blank"
-                >
-                  
-                </a>
-              <h3>{project.name} <i class="fa fa-plus" /></h3>
-              <span>{project.stack.map(
-                (stack, i) => 
-                <span className="stack" key={i}>{stack}</span>
-                )}
+              <a 
+                className="project__link"
+                style={{backgroundImage: `url(${project.thumbnail})`}} 
+                href={project.link} 
+                title={project.name} 
+                rel="noopener noreferrer" 
+                target="_blank"
+              >
+              </a>
+              <h3 className="project__title">
+                {project.name} 
+                <i role="link" tabindex="0" class="fa fa-plus project__icon" />
+              </h3>
+              <span className="project__stack">
+                {project.stack.map(
+                  (stack, i) => 
+                  <span className="project__stack__item" key={i}>{stack}</span>
+                  )
+                }
               </span>
-               <p class="description display-none">
-                  {project.description}
-                </p>
+              <p className="project__description">
+                {project.description}
+              </p>
             
           </section>
         )
       }
       
-    </div>
-  </main>
+    </main>
 
   <footer class="contact">
         <a 
