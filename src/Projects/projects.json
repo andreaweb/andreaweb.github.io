@@ -6,6 +6,9 @@
 	"nome": "Wikipedia Viewer",
 	"descricao": "Este projeto consome a API da Wikipedia e retorna o input pesquisado como uma lista. A lista mostrará: título, uma descrição curta de cada resultado, e imagem quando disponível.",
 
+  "titel": "Wikipedia Viewer",
+  "Omschrijving": "Dit project verbind met de Wikipedia API en geeft de resulaten van de gegeven zoekterm in een lijst. De lijst geeft de titel en een korte omschrijving van elk resultaat en ook een afbeelding indien beschikbaar.",
+
 	"thumbnail": "./images/wikipedia.jpg",
 	"link": "https://codepen.io/andreaweb/full/wWzqgM/"
 },
@@ -16,6 +19,8 @@
 	"nome": "Cronômetro Pomodoro",
 	"descricao": "Configure por quanto tempo você quer trabalhar e por quanto tempo quer descansar, e este relógio te avisa quando alternar.",
 
+  "titel": "Pomodoro Klok",
+  "Omschrijving": "Je kan instellen hoelang je wilt werken, en hoelang je wilt chillen. De klok geeft een alarm als het tijd is om te switchen.",
 
 	"stack": ["Jquery"],
 	"thumbnail": "./images/pomodoro.jpg",
@@ -28,6 +33,9 @@
 	"nome": "Calculadora Javascript",
 	"descricao": "Calculadora simples. Não inclui porcentagens. Inclui números negativos.",
 
+	"titel": "JS Rekenmachine",
+	"Omschrijving": "Simpele rekenmachine. Doet niet aan percantages. Doet wel aan negatieve nummers.",
+
 	"stack": ["Jquery"],
 	"thumbnail": "./images/calculator.jpg",
 	"link": "https://codepen.io/andreaweb/full/akRgRK/"
@@ -38,6 +46,9 @@
 	
 	"nome": "Condições do Tempo",
 	"descricao": "Mostra clima atual de acordo com o seu local. Necessita de geolocation. A imagem de fundo irá mudar de acordo com o clima.",
+
+  "titel": "Weer API",
+  "Omschrijving": "Geeft het weer weer. Geolocation moet aanstaan om te werken. De achtergrond past zich aan het weer aan.",
 
 	"stack": ["Jquery", "API"],
 	"thumbnail": "./images/weather.jpg",
@@ -50,6 +61,9 @@
 	"nome": "Super Dario",
 	"descricao": "Um jogo bastante simples, bom para servir de amostra de um jogo maior. Super Dario caminha/corre para sempre quando o jogo começa. O usuário pode fazê-lo pular para se desviar do inimigo. Dario ficará menor se for acertado uma vez, e morrerá se for acertado novamente. Inimigos aparecem em ritmo constante.",
 
+  "titel": "Super Dario",
+  "Omschrijving": "Een simpel spelletje, een voorbeeld van een uitgebreider spel. Super Dario blijft oneindig vooruit lopen vanaf het moment dat het spel start. De speler kan Dario laten springen om vijanden te ontwijken.  Dario krimpt de eerste keer dat hij door een vijand geraakt wordt, de tweede keer sterft hij. Vijanden blijven in een constant ritme komen.", 
+
 	"stack": ["CSS Animations", "Javascript"],
 	"thumbnail": "./images/dario.jpg",
 	"link": "https://andreaweb.github.io/super-dario/"
@@ -60,6 +74,9 @@
 	
 	"nome": "Resenhas Restaurantes",
 	"descricao": "Este projeto consome um JSON local para mostrar uma lista de restaurantes e suas respectivas resenhas. Consome também a API MapBox para mostrar a localização dos restaurantes. Páginas visitadas estarão disponíveis para uso offline. Este projeto foi otimizado para condizer com regras de acessibilidade.",
+
+  "titel": "Restaurant Recensies",
+  "Omschrijving": "Dit project gebruikt een lokale JSON voor het weergeven van restaurants en hun recensies. Het combineert dat met een map API om ook hun lokatie te laten zien. Pagina's die al bezocht zijn blijven ook offline beschikbaar. Dit project heeft correct focus, alternatieve text en aria-roles.",
 
 	"stack": ["Service Worker", "API", "Accessibility", "Javascript"],
 	"thumbnail": "./images/restaurant.jpg",
@@ -72,6 +89,9 @@
 	"nome": "Jogo estilo Fliperama",
 	"descricao": "Similar ao 'Frogger', seu objetivo é alcançar a água no topo da tela. Ondas de inimigos com velocidades aleatórias irão surgir e tentar te pegar! Ganhe pontos extras sendo ousado nas pedras. ",
 
+  "titel": "Wikipedia Viewer",
+  "Omschrijving": "Een spelletje geinspireerd door 'Frogger'. Het doel is om het water bovenin het scherm te bereiken. Willekeurig geplaatse vijanden proberen je te stoppen. Je krijgt extra punten als je meer tijd doorbrengt op de stenen.",
+
 	"stack": ["HTML5 Canvas", "Javascript"],
 	"thumbnail": "./images/arcade.jpg",
 	"link": "https://andreaweb.github.io/frontend-nanodegree-arcade-game/"
@@ -82,6 +102,9 @@
 	
 	"nome": "Minhas Leituras",
 	"descricao": "Um aplicativo de estante que mostra livros que você está lendo, planejando ler, ou que já terminou. Você pode adicionar mais livros a sua estante e pode também trocar os livros de estante ou removê-los das mesmas.",
+
+  "titel": "Mijn Boeken",
+  "Omschrijving": "Een boekenplank app dat boeken die je op dit moment leest, nog wil lezen, of al gelezen hebt laat zien. Je kan boeken toevoegen op de search pagina. Je kan boeken op een andere plank zetten vanaf beide pagina's.",
 
 	"stack": ["React", "API"],
 	"thumbnail": "./images/myreads.jpg",
@@ -94,6 +117,9 @@
 	"nome": "Mapa da Vizinhança",
 	"descricao": "Esse projeto consome API's do Google Maps e do Yelp para mostrar negócios a partir de Vicente de Carvalho. No campo de entrada ao pé da página é possível mudar o tipo de empresa pesquisada. O local, no entanto, não pode ser mudado. Este projeto funciona offline de maneira parcial (resultados prévios estarão disponíveis, mas recarregar a página causará um erro).",
 
+	"titel": "Buurtkaart",
+	"Omschrijving": "Dit project maakt gebruikt van de API's van Google maps en Yelp om lokale bedrijven in de omgeving van Vicente de Carvalho in Rio de Janeiro weer te geven. In het veld onderin kan je het soort bedrijf dat weergegeven wordt kiezen. Je kan de lokatie niet veranderen. Dit project werkt deels offline (al geladen API resultaten worden weergegeven als je offline gaat, maar de pagina opnieuw laden stopt de app).",
+
 	"stack": ["React", "API", "Accessibility", "Service Worker"],
 	"thumbnail": "./images/map.jpg",
 	"link": "https://andreaweb.github.io/neighbourhood-map/"
@@ -104,6 +130,9 @@
 	
 	"nome": "Star Wars",
 	"descricao": "Página única que mostra planetas aleatórios da franquia Star Wars a cada clique no botão ou a cada recarregamento de página.",
+
+  "titel": "Star Wars",
+  "Omschrijving": "Een enkele pagina die een willekeurige planeet uit het Star Wars universum weergeeft.",
 
 	"stack": ["React", "API"],
 	"thumbnail": "./images/starwars.jpg",
@@ -116,6 +145,9 @@
 	"nome": "Loja de Sapatos",
 	"descricao": "Página única. Cliques no botão de compra vão atualizar a sacola. Cliques em produtos sugeridos mudam o produto ativo. Cliques em miniaturas ou setas próximas a elas mudam a miniatura ativa. Fora isso, a maioria dos links são decorativos e não funcionarão.",
 
+  "titel": "Schoenwinkel",
+  "Omschrijving": "Één pagina. Als je op de koop knop klikt update het winkelwagentje. Op een van de gesuggereerde producten klikken verandert het actieve artikel. Op een thumbnail of op de pijltjes klikken verandert de actieve thumbnail. Verder zijn de meeste andere links voor de vorm, en werken dus niet.",
+
 	"stack": ["React"],
 	"thumbnail": "./images/shoesstore.jpg",
 	"link": "https://andreaweb.github.io/shoes-store/"
@@ -127,6 +159,9 @@
 	"nome": "Vaga em Agência de SP",
 	"descricao": "Uma página simples e responsiva em HTML e CSS, feita apenas para praticar um pouco, baseada no layout de uma empresa paulista.",
 
+  "titel": "Vacature in SP",
+  "Omschrijving": "Een simpele en responsive HTML/CSS pagina, die ik heb gemaakt om te oefenen. Gebaseerd op een layout van een bedrijf uit São Paulo.",
+
 	"stack": ["CSS Grid"],
 	"thumbnail": "./images/dbrag.jpg",
 	"link": "https://andreaweb.github.io/front-end-challenges/dbrag/index.html"
@@ -137,6 +172,9 @@
 	
 	"nome": "Lista de Filmes",
 	"descricao": "Um aplicativo React responsivo que consome a API Open Movie Database. Pode-se pesquisar filmes por nome e clicar neles para ver detalhes.",
+
+	"titel": "Film Lijst",
+	"Omschrijving": "Een responsive React App dat gebruik maakt van de Open Movie Database API. Je kan naar films zoeken bij naam en klikken voor verdere details over de film.",
 
 	"stack": ["React", "Redux", "API"],
 	"thumbnail": "./images/movies.jpg",

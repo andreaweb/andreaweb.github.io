@@ -41,7 +41,7 @@ class App extends Component {
                   { 
                     this.state.currentLanguage === "NL"
                     ?
-                      "PROJECTS"
+                      "PROJECTEN"
                     : null
                   } 
               </li>
@@ -61,7 +61,7 @@ class App extends Component {
                   { 
                     this.state.currentLanguage === "NL"
                     ?
-                      "SUMMARY"
+                      "SAMENVATTING"
                     : null
                   }
               </li>
@@ -101,7 +101,7 @@ class App extends Component {
                 <li 
                   role="button"
                   tabIndex="0"
-                  title=""
+                  title="Verander taal naar Nederlands"
                   onClick={() => this.changeLanguage('NL')}
                   className={
                     this.state.currentLanguage === 'NL'

@@ -71,7 +71,7 @@ class Projects extends React.Component{
 		                title={
 		                  this.props.currentLanguage === "EN" 
 		                  ? project.name
-		                  : project.nome
+		                  : this.props.currentLanguage === "PT" ? project.nome : project.titel
 		                } 
 		                rel="noopener noreferrer" 
 		                target="_blank"
@@ -81,7 +81,7 @@ class Projects extends React.Component{
 		                {
 		                  this.props.currentLanguage === "EN" 
 		                  ? project.name
-		                  : project.nome
+		                  : this.props.currentLanguage === "PT" ? project.nome : project.titel
 		                } 
 		                <i 
 		                  role="link" 
@@ -108,7 +108,8 @@ class Projects extends React.Component{
 		                {
 		                  this.props.currentLanguage === "EN" 
 		                  ? project.description
-		                  : project.descricao
+		                  : this.props.currentLanguage === "PT" 
+		                  	? project.descricao : project.Omschrijving
 		                } 
 		              
 		              </p>
