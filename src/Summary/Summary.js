@@ -10,8 +10,8 @@ class Summary extends React.Component{
 			        this.props.currentLanguage === "EN"
 			        ?
 			          summary[0].textLines.map(
-			            (text, key) =>
-			            <p key="key">{text}</p>
+			            (text) =>
+			            <p key={text}>{text}</p>
 			          )
 			        : null
 			      }
@@ -19,8 +19,8 @@ class Summary extends React.Component{
 			        this.props.currentLanguage === "PT"
 			        ?
 			          summary[1].textLines.map(
-			            (text, key) =>
-			            <p key="key">{text}</p>
+			            (text) =>
+			            <p key={text}>{text}</p>
 			          )
 			        : null
 			      }
@@ -28,8 +28,8 @@ class Summary extends React.Component{
 			        this.props.currentLanguage === "NL"
 			        ?
 			          summary[2].textLines.map(
-			            (text, key) =>
-			            <p key="key">{text}</p>
+			            (text) =>
+			            <p key={text}>{text}</p>
 			          )
 			        : null
 			      }

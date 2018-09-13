@@ -9,34 +9,41 @@ class Projects extends React.Component{
 			projectsArr: [],
 			activeDescription: null,
 			search: [
-		        "Jquery", 
-		        "API", 
-		        "CSS Animations",
-		        "HTML5 Canvas",
-		        "Service Worker",
-		        "Accessibility",
-		        "Javascript",
-		        "React",
-		        "CSS Grid",
-		        "Redux"
+		        //"Jquery", 
+		        "api", 
+		        "css animations",
+		        "html5 canvas",
+		        "service worker",
+		        "accessibility",
+		        "javascript",
+		        "react",
+		        "css grid",
+		        "redux"
 	        ]
 		}
 	}
 	componentDidMount(){
-	    const filteredArr = this.state.projects
+		this.filterProjects()    
+	}
+	filterProjects(){
+		let filteredArr = this.state.projects
 	    this.setState({
 	      projects: filteredArr.filter(
 	        project =>    
 	          project.stack.map(
 	            (stack) => 
-	            this.state.search.includes(stack)
+	            this.state.search.includes(stack.toLowerCase())
 	          ).reduce(
 	            (prev, next) =>
 	            prev === true || next === true ? true : false
 	          )
 	      )
 	    })
-	  }
+	}
+	//chooseStack = () =>{
+	//	let searchCopy = this.search.value;
+	//	console.log(this.state.search.indexOf(searchCopy.toLowerCase()))
+	//}
 	addProject = (project) => {
 		this.state.projectsArr.push(project)
 	}
@@ -51,7 +58,11 @@ class Projects extends React.Component{
 	render(){
 		return(
 			<main className="portfolio">
-		    
+		    {//<input FILTER IS CURRENTLY NOT SO USEFUL... THERE'S NOT THAT MANY PROJECTS!
+			   // ref={input => this.search = input}
+			   // onChange={this.chooseStack} 
+			///>
+			}
 		      {this.state.projects.map(
 		          (project, key) =>
 		          <section 
@@ -60,7 +71,7 @@ class Projects extends React.Component{
 		              ? "project active"
 		              : "project"
 		            }
-		            key={key} 
+		            key={project.name} 
 		            id={key} 
 		            ref={ this.addProject }
 		          >
