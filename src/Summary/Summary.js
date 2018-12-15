@@ -8,77 +8,28 @@ class Summary extends React.Component{
 			    <div className="summary__text">
 			      { 
 			        this.props.currentLanguage === "EN"
-			        ?
+			        &&
 			          summary[0].textLines.map(
 			            (text) =>
 			            <p key={text}>{text}</p>
 			          )
-			        : null
 			      }
 			      { 
 			        this.props.currentLanguage === "PT"
-			        ?
+			        &&
 			          summary[1].textLines.map(
 			            (text) =>
 			            <p key={text}>{text}</p>
 			          )
-			        : null
 			      }
 			      { 
 			        this.props.currentLanguage === "NL"
-			        ?
+			        &&
 			          summary[2].textLines.map(
 			            (text) =>
 			            <p key={text}>{text}</p>
 			          )
-			        : null
 			      }
-			      <p>
-				       { 
-				        this.props.currentLanguage === "EN"
-				        ?
-				          summary[0].articleLine
-				        : null
-				      }
-				      { 
-				        this.props.currentLanguage === "PT"
-				        ?
-				          summary[1].articleLine
-				        : null
-				      }
-				      { 
-				        this.props.currentLanguage === "NL"
-				        ?
-				          summary[2].articleLine
-				        : null
-				      } 
-				        <a 
-				          className="yellow"
-				          target="_blank"
-				          rel="noopener noreferrer"
-				          title="Guias de Estudo Front-End"
-				          href="https://medium.com/@a.cosmos/alguns-guias-de-estudo-front-end-especialmente-para-principiantes-bfa480aca526"
-				        >
-				          { 
-				            this.props.currentLanguage === "EN"
-				            ?
-				              summary[0].articleCall
-				            : null
-				          }
-				          { 
-				            this.props.currentLanguage === "PT"
-				            ?
-				              summary[1].articleCall
-				            : null
-				          }
-				          { 
-				            this.props.currentLanguage === "NL"
-				            ?
-				              summary[2].articleCall
-				            : null
-				          } 
-				        </a>
-			      </p>
 			    </div>
 				<div className="contact">
 			        <a 

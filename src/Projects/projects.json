@@ -89,7 +89,7 @@
 	"nome": "Jogo estilo Fliperama",
 	"descricao": "Similar ao 'Frogger', seu objetivo é alcançar a água no topo da tela. Ondas de inimigos com velocidades aleatórias irão surgir e tentar te pegar! Ganhe pontos extras sendo ousado nas pedras. ",
 
-  "titel": "Wikipedia Viewer",
+  "titel": "Arcade Game",
   "Omschrijving": "Een spelletje geinspireerd door 'Frogger'. Het doel is om het water bovenin het scherm te bereiken. Willekeurig geplaatse vijanden proberen je te stoppen. Je krijgt extra punten als je meer tijd doorbrengt op de stenen.",
 
 	"stack": ["HTML5 Canvas", "Javascript"],
@@ -179,5 +179,19 @@
 	"stack": ["React", "Redux", "API"],
 	"thumbnail": "./images/movies.jpg",
 	"link": "http://hideous-stage.surge.sh/"
+},
+{
+	"name": "GitHub Repos",
+	"description": "This React app connects to GitHub's API and displays repositories of an organization. Clicking on a repository shows its branches. Test coverage is at 58%",
+	
+	"nome": "GitHub Repos",
+	"descricao": "Este aplicativo React consome a API do Github e mostra repositórios de uma determinada organização. Clique em um repositório para ver as suas branches. Cobertura dos testes: 58%",
+
+	"titel": "GitHub Repos",
+	"Omschrijving": "",
+
+	"stack": ["React", "Material-UI", "API"],
+	"thumbnail": "./images/repos.png",
+	"link": "http://clammy-tax.surge.sh/"
 }
 ]
