@@ -3,7 +3,7 @@
 		"textLines": [
 			"Hello, I'm Andrea and I've worked with front-end development since 2013.", 
 			"I'm skilled in HTML5, CSS3, ES6 and React.",
-			"I also have experience with Polymer. Currently, I'm learning tests in React and Redux.",
+			"I also have experience with Polymer. Currently, I'm learning React Native.",
 			"I like flat hierarchy, assuming responsability, constant learning and critical thinking."
 		]
 	},
@@ -11,7 +11,7 @@
 		"textLines": [
 			"Olá, meu nome é Andrea e trabalho com desenvolvimento front-end desde 2013.", 
 			"Sou habilidosa com HTML5, CSS3, ES6 e React.",
-			"Também tenho experiência com Polymer. Atualmente, estou aprendendo testes em React e Redux.",
+			"Também tenho experiência com Polymer. Atualmente, estou aprendendo React Native.",
 			"Gosto de autonomia, assumir responsabilidades, aprender constantemente e pensar criticamente."
 		]
 	},
@@ -19,7 +19,7 @@
 		"textLines": [
 			"Hallo, ik ben Andrea en ik ben een front-end developer sinds 2013.", 
 			"Ik ken HTML5, CSS3, ES6 en React.", 
-			"Ik heb ook ervaring met Polymer. Op het moment ben ik tests voor React en Redux aan het leren."
+			"Ik heb ook ervaring met Polymer. Op het moment ben ik React Native aan het leren."
 		]
 	}
 ]
