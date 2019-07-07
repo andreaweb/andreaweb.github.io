@@ -2,11 +2,12 @@ import React from 'react';
 import projects from './projects.json';
 
 class Projects extends React.Component{
+	//const [projectsArr, setProjectsArr] = useState(projects);
 	constructor(props){
 		super(props);
 		this.state = {
-			projects: projects,
-			projectsArr: [],
+			projectsArr: projects,
+			refsArr: [],
 			activeDescription: null,
 			search: [
 		        //"Jquery", 
@@ -23,12 +24,9 @@ class Projects extends React.Component{
 		}
 	}
 	componentDidMount(){
-		this.filterProjects()    
-	}
-	filterProjects(){
-		let filteredArr = this.state.projects
+		let filteredArr = this.state.projectsArr
 	    this.setState({
-	      projects: filteredArr.filter(
+	      projectsArr: filteredArr.filter(
 	        project =>    
 	          project.stack.map(
 	            (stack) => 
@@ -38,14 +36,10 @@ class Projects extends React.Component{
 	            prev === true || next === true ? true : false
 	          )
 	      )
-	    })
+	    })   
 	}
-	//chooseStack = () =>{
-	//	let searchCopy = this.search.value;
-	//	console.log(this.state.search.indexOf(searchCopy.toLowerCase()))
-	//}
 	addProject = (project) => {
-		this.state.projectsArr.push(project)
+		this.state.refsArr.push(project)
 	}
 	toggleDescription = (e,key) => {
 		const current = this.state.activeDescription;
@@ -63,7 +57,7 @@ class Projects extends React.Component{
 			   // onChange={this.chooseStack} 
 			///>
 			}
-		      {this.state.projects.map(
+		      {this.state.projectsArr.map(
 		          (project, key) =>
 		          <section 
 		            className={

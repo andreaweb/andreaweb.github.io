@@ -1,5 +1,6 @@
 import React from 'react';
 import summary from './summary.json';
+import Button from './Button';
 
 class Summary extends React.Component{
 	render(){
@@ -32,6 +33,7 @@ class Summary extends React.Component{
 			      }
 			    </div>
 				<div className="contact">
+					<Button />
 			        <a 
 			          href="https://www.linkedin.com/in/andreafrontend/?locale=en_US" 
 			          title="LinkedIn" 
