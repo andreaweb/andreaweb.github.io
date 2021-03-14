@@ -39,6 +39,7 @@ p,h5,h3{
   outline: none;
 }
 .header__menu__item--language{
+  display: none;
   margin: 0;
 }
 .header__menu__item--language:after{
